@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-family);
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 10%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+#nav a {
+  font-size: 1rem;
+  line-height: 1rem;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+#nav i {
+  font-size: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+#title-container {
+  width: 100%;
+  padding: 20px 80px;
+  /* background-color: green; */
+}
+
+#title-container h1 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+.des-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  /* background-color: green; */
+}
+
+.des-container p {
+  /* background-color: yellow; */
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+.link-container {
+  /* background-color: red; */
+  width: 20%;
+}
+
+.link-container .elem {
+  border-top: 1px solid #000000;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-container .elem a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.link-container .elem i {
+  font-size: 0.8rem;
+  opacity: 0;
+}
+
+.link-container .elem:hover {
+  background-color: rgba(240, 235, 235, 0.74);
+}
+
+.link-container .elem:hover a {
+  text-decoration: underline;
+}
+.link-container .elem:hover i {
+  opacity: 1;
+}
+
+#bottom-img {
+  width: 100%;
+  height: 80%;
+  /* min-height: 200px; */
+  background-color: red;
+  background-image: url(https://images.unsplash.com/photo-1613876214872-a73df2a1b8bc?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 0 5%;
+  background-repeat: no-repeat;
+}
