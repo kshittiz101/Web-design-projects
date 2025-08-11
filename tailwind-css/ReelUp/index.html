@@ -2,75 +2,92 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- tailwind -->
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- remix icons -->
+    <!-- Remix Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <title>Reel Up</title>
   </head>
-  <body class="bg-white">
-    <div class="main w-full bg-white py-4">
-      <div class="container mx-auto px-4 flex items-center justify-between">
-        <!-- Logo / Brand -->
-        <div class="text-lg font-bold">Reel Up</div>
+  <body>
+    <div class="main w-full px-[60px]">
+      <div class="mx-auto h-full flex flex-col">
+        <!-- navbar -->
+        <div class="navbar py-4 flex items-center justify-between">
+          <!-- Logo / Brand -->
+          <div class="text-lg font-bold">Reel Up</div>
 
-        <!-- Mobile Menu Button -->
-        <button
-          class="lg:hidden block text-gray-700 focus:outline-none"
-          id="menu-btn"
-        >
-          <i class="ri-menu-3-line text-black-500"></i>
-        </button>
-
-        <!-- Nav Links -->
-        <div class="nav-links text-base hidden lg:flex gap-6">
-          <a href="#" class="hover:text-blue-500">Products</a>
-          <a href="#" class="hover:text-blue-500">Customers Stories</a>
-          <a href="#" class="hover:text-blue-500">Resources</a>
-          <a href="#" class="hover:text-blue-500">Pricing</a>
-        </div>
-
-        <!-- Support & Demo Links -->
-        <div class="demo-support-container hidden lg:flex items-center gap-4">
-          <a href="#" class="hover:text-blue-500">Book A Demo</a>
+          <!-- Mobile Menu Button -->
           <button
-            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            class="lg:hidden block text-gray-700 focus:outline-none text-2xl"
+            id="menu-btn"
+            aria-label="Toggle menu"
           >
-            Get Started
+            <i class="ri-menu-3-line"></i>
           </button>
-        </div>
-      </div>
 
-      <!-- Mobile Menu -->
-      <div
-        class="mobile-menu hidden flex-col gap-4 px-4 pb-4 lg:hidden"
-        id="mobile-menu"
-      >
-        <a href="#" class="hover:text-blue-500">Products</a>
-        <a href="#" class="hover:text-blue-500">Customers Stories</a>
-        <a href="#" class="hover:text-blue-500">Resources</a>
-        <a href="#" class="hover:text-blue-500">Pricing</a>
-        <a href="#" class="hover:text-blue-500">Book A Demo</a>
-        <button
-          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-fit"
-        >
-          Get Started
-        </button>
+          <!-- Nav Links -->
+          <div class="nav-links text-base hidden lg:flex gap-6">
+            <a href="#" class="hover:text-blue-500">Products</a>
+            <a href="#" class="hover:text-blue-500">Customers Stories</a>
+            <a href="#" class="hover:text-blue-500">Resources</a>
+            <a href="#" class="hover:text-blue-500">Pricing</a>
+          </div>
+
+          <!-- Support & Demo Links -->
+          <div class="demo-support-container hidden lg:flex items-center gap-4">
+            <a href="#" class="hover:text-blue-500">Book A Demo</a>
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <!-- hero content -->
+        <div class="w-full h-[75vh] relative">
+          <div
+            class="hero-section-content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center gap-5 max-w-4xl px-4"
+          >
+            <button
+              class="text-black border border-black px-4 py-2 rounded-3xl hover:text-white hover:bg-black transition"
+            >
+              About Us
+            </button>
+            <h1 class="sm:text-6xl md:text-5xl w-full leading-none mt-2">
+              Most Powerful Way To Connect Every Audience
+            </h1>
+            <p class="mt-2">
+              Since 2004,our technology has help customers all over the world
+              harness the incredible power of video- we even won two Technology
+            </p>
+
+            <!-- demo and book a demo btn -->
+            <div class="book-demo-container flex gap-4 mt-3">
+              <button
+                class="text-white bg-black border border-black px-4 py-2 rounded-3xl hover:text-black hover:bg-white transition"
+              >
+                Get Started - For Free
+              </button>
+              <button
+                class="text-black border border-black px-4 py-2 rounded-3xl hover:text-white hover:bg-black transition"
+              >
+                Book A Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- gellary sections -->
+        <div class="h-[50vh] bg-blue-500"></div>
       </div>
     </div>
-
-    <script>
-      const menuBtn = document.getElementById("menu-btn");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
   </body>
 </html>
